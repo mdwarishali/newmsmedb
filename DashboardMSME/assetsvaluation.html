@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Header</title>
+
+    <link rel="stylesheet" href="../assets/css/msme_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Logo Section -->
+        <div class="col-md-2 logo-section">
+            <div class="db-logo">
+                <img src="../assets/images/MSME_images/Warehouse/dark-risk.webp" alt="Logo">
+            </div>
+            <div class="msme-text">
+                <h2>MSME</h2>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-10 info-section">
+            <div class="company-name">
+                Company Name
+            </div>
+            <div class="user-info">
+                <span>Welcome, User </br>Good Evening 08 Nov, 2024 05:25:12 pm</span>
+                <div class="db-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- new section on dashboard after header -->
+
+        <div class="dashboard-main">
+
+            <!-- progress bar section -->
+
+            <section class="process-bar-sec">
+                <!-- prgress bar -->
+                <div class="row pb-header">
+                    <div class="col-md-2">
+                        <h2 class="db-text">Endorsement Calculation</h2>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="progress_bar">
+                            <form id="progress" action="" class="progressbar">
+                                <input type="radio" id="step-1" value="steps" name="steps" class="progressbar__radio"
+                                    checked>
+                                <label for="step-1" class="progressbar__label">Step 1</label>
+                                <input type="radio" id="step-2" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-2" class="progressbar__label">Step 2</label>
+                                <input type="radio" id="step-3" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-3" class="progressbar__label">Step 3</label>
+                                <input type="radio" id="step-4" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-4" class="progressbar__label">Step 4</label>
+                                <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-5" class="progressbar__label">Step 5</label>
+                                <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-1" class="progressbar__label">Step 6</label>
+                                <input type="radio" id="step-2" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-2" class="progressbar__label">Step 7</label>
+                                <input type="radio" id="step-3" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-3" class="progressbar__label">Step 8</label>
+                                <input type="radio" id="step-4" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-4" class="progressbar__label">Step 9</label>
+                                <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-5" class="progressbar__label">Step 10</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- side navigation -->
+
+            <section>
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-lg-2 col-12">
+                        <div class="db-sidenav" id="sidenav">
+                            <button class="close-btn" id="closeBtn">&times;</button>
+                            <a href="logincredential.html">Login Credentials</a>
+                            <a href="FAR.html">FAR</a>
+                            <a href="assetsvaluation.html" style="background-color: #ffffff; color: black;">Sum Insured Fixation</a>
+                            <a href="basicquote.html">Basic Quote</a>
+                            <a href="payamentpage.html">Payment Page</a>
+                            <a href="endorsementcal.html">Endorsement Calculation</a>
+                            <a href="monthly.html">Monthly Declaration</a>
+                            <a href="claimregistration.html">Claim Registration</a>
+                            <a href="running.html">Running Claim Details</a>
+                            <a href="#">Logout</a>
+
+
+                        </div>
+                        <button class="hamburger-btn" id="hamburgerBtn">&#9776;</button>
+                    </div>
+                    <div class="col-lg-10 col-12">
+                        <div class="container">
+                            <div class="avs-page">
+                              <!-- Asset Valuation Summary page -->
+                
+                              <div class="main-container">
+                                  <div class="table-responsive">
+                                      <table class="table table-bordered">
+                                          <thead>
+                                              <tr class="table-header">
+                                                  <th class="col-md-4 py-4">Asset Category</th>
+                                                  
+                                                  <th class="col-md-3">Final Indexed Value Reinstatement Value <br> (Total Sum Insured)</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody id="dataRows">
+                                              <tr>
+                                                  <td>
+                                                      <h3>Building</h3>
+                                                  </td>
+                                                
+                                                  <td><input type="text" class="form-control" placeholder="2,10,72,00.00"></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>
+                                                      <h3>FFF & Office Equipments</h3>
+                                                  </td>
+                                                 
+                                                  <td><input type="text" class="form-control" placeholder="2,10,72,00,.00"></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>
+                                                      <h3>IT Equipment & Laptops</h3>
+                                                  </td>
+                                                  <td><input type="text" class="form-control" placeholder="2,10,72,00.00"></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>
+                                                      <h3>Plant & Machinery</h3>
+                                                  </td>
+                                                 
+                                                  <td><input type="text" class="form-control" placeholder="2,10,72,00.00"></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>
+                                                      <h3>Electrical Machinery</h3>
+                                                  </td>
+                                                 
+                                                  <td><input type="text" class="form-control" placeholder="2,10,72,00.00"></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>
+                                                      <h3>Electronic Items</h3>
+                                                  </td>
+                                                  
+                                                  <td><input type="text" class="form-control" placeholder="2,10,72,00.00"></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>
+                                                      <h3>IT Hardware</h3>
+                                                  </td>
+                                                 
+                                                  <td><input type="text" class="form-control" placeholder="2,10,72,00.00"></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>
+                                                      <h3>Not a Fixed Asset</h3>
+                                                  </td>
+                                                 
+                                                  <td><input type="text" class="form-control" placeholder="2,10,72,00.00"></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>
+                                                      <h3><b>Total</b></h3>
+                                                  </td>
+                                                  
+                                                  <td><input type="text" class="form-control" placeholder="2,10,72,00.00"></td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </div>
+                                  <div class="d-flex align-items-end back-pro my-3">
+                                      <div class="col-md-1">
+                                          <button class="btn btn-back w-100">Back</button>
+                                      </div>
+                                      <div class="col-md-1">
+                                          <button class="btn btn-purple w-100">Save</button>
+                                      </div>
+                                  </div>
+                              </div>
+                      
+                              <!-- Category and Sum Insured details for Fire Insurance Policy page -->
+                      
+                      
+                              <h2 class="text-left" style="padding-left: 30px!important;">Add Category & Sum Insured for Fire Insurance Policy</h2>
+                              <div class="main-container">
+                                  <div class="form-section mb-4">
+                                      <div class="row mb-3">
+                                         
+                                          <div class="col-md-7">
+                                             <label for="categoryDropdown" class="form-label">Select Category</label>
+                                             <select id="categoryDropdown" class="form-control">
+                                                 <option value="" disabled selected>Select a category</option>
+                                                 <option value="category1">Category 1</option>
+                                                 <option value="category2">Category 2</option>
+                                                 <option value="category3">Category 3</option>
+                                                 <option value="category4">Category 4</option>
+                                                 <option value="category5">Category 5</option>
+                                             </select>
+                                         </div>
+                                         
+                                          <div class="col-md-3">
+                                              <label for="amount" class="form-label">Amount</label>
+                                              <input type="number" id="amount" class="form-control" placeholder="Enter amount">
+                                          </div>
+                                          <div class="col-md-2 d-flex align-items-end">
+                                              <button class="btn btn-purple w-100">+ Add</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                      
+                                  <div class="table-responsive py-3">
+                                      <h5 class="mb-3">Category & Sum Insured Details for Fire Insurance Policy:-</h5>
+                                      <table class="table table-bordered">
+                                          <thead class="fixed-row">
+                                              <tr class="table-header">
+                                                  <th class="col-md-6">Description of Risk</th>
+                                                  <th class="col-md-3">Sum Insured</th>
+                                                  <th class="col-md-2">Action</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody id="dataRows" class="scrollable-table">
+                                              <tr>
+                                                  <td><input type="text" class="form-control"
+                                                          placeholder="Building Including Boundary Wall of Office Block, restaurants, etc">
+                                                  </td>
+                                                  <td><input type="number" class="form-control" placeholder="2,10,72,00,000.00"></td>
+                                                  <td class="text-center action-btns">
+                                                      <button class="btn btn-sm edit"><i class="fa-solid fa-pen"></i></button>
+                                                      <button class="btn btn-sm delete"><i class="fa-solid fa-trash"></i></button>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td><input type="text" class="form-control" placeholder="Furniture & Fixture"></td>
+                                                  <td><input type="number" class="form-control" placeholder="2,76,00,000.00"></td>
+                                                  <td class="text-center action-btns">
+                                                      <button class="btn btn-sm edit"><i class="fa-solid fa-pen"></i></button>
+                                                      <button class="btn btn-sm delete"><i class="fa-solid fa-trash"></i></button>
+                                                  </td>
+                                              </tr>
+                      
+                                          </tbody>
+                                          <tfoot>
+                                              <tr class="footer-row">
+                                                  <td>Total Sum Insured</td>
+                                                  <td><input type="text" id="totalSumInsured" class="form-control" placeholder="0.00"
+                                                          readonly>
+                                                  </td>
+                                                  <td></td>
+                                              </tr>
+                                          </tfoot>
+                                      </table>
+                                  </div>
+                              </div>
+                      
+                              <h2 class="text-left my-4 mx-3">Choose the option below for proceed further.</h2>
+                      
+                              <div class="row main-container mx-3" style="background-color: #c9e0fc;">
+                                  <div class="col-md-6 col-lg-6">
+                                      <div class="form-row">
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" id="checkbox1">
+                                              <label class="form-check-label" for="checkbox1"></label>
+                                          </div>
+                                          <label class="form-label" for="input1">SI <br>
+                                              <h2>(RIV reached using Asset Valuation)</h2>
+                                          </label>
+                                          <input type="text" class="form-control" id="input1" placeholder="2,72,00,000.00">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6 col-lg-6">
+                                      <div class="form-row">
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" id="checkbox2">
+                                              <label class="form-check-label" for="checkbox2"></label>
+                                          </div>
+                                          <label class="form-label" for="input2">Total SI <br>
+                                              <h2>(as per the Entered Data)</h2>
+                                          </label>
+                                          <input type="text" class="form-control" id="input2" placeholder="2,76,00,000.00">
+                                      </div>
+                                  </div>
+                              </div>
+                      
+                              <div class="d-flex align-items-end back-pro my-5">
+                                  <div class="col-md-1">
+                                      <button class="btn btn-back w-100">Back</button>
+                                  </div>
+                                  <div class="col-md-1">
+                                      <button class="btn btn-purple w-100">Proceed</button>
+                                  </div>
+                              </div>
+                      
+                              <div class="rb-footer py-3">
+                                  <h3 class="text-center">
+                                      Designed & Developed by: <span style="color: #01316B;">Riskbirbal Insurance Brokers Pvt. Ltd.</span>
+                                  </h3>
+                              </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"></script>
+
+    <script>
+        // JavaScript for toggling side navigation
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburgerBtn = document.getElementById("hamburgerBtn");
+            const sidenav = document.getElementById("sidenav");
+            const closeBtn = document.getElementById("closeBtn");
+
+            // Open the side navigation when hamburger icon is clicked
+            hamburgerBtn.addEventListener("click", function () {
+                sidenav.classList.add("open");
+            });
+
+            // Close the side navigation when close icon is clicked
+            closeBtn.addEventListener("click", function () {
+                sidenav.classList.remove("open");
+            });
+
+            // Close the side navigation if clicked outside of it (optional)
+            window.addEventListener("click", function (event) {
+                if (!sidenav.contains(event.target) && !hamburgerBtn.contains(event.target)) {
+                    sidenav.classList.remove("open");
+                }
+            });
+        });
+
+        function toggleForm(type) {
+            const formSection = document.getElementById('formSection');
+            const textareaSection = document.getElementById('textareaSection');
+
+            if (type === 'form') {
+                formSection.style.display = 'block';
+                textareaSection.style.display = 'none';
+            } else {
+                formSection.style.display = 'none';
+                textareaSection.style.display = 'block';
+            }
+        };
+    </script>
+
+
+</body>
+
+</html>

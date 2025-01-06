@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Header</title>
+
+    <link rel="stylesheet" href="../assets/css/msme_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Logo Section -->
+        <div class="col-md-2 logo-section">
+            <div class="db-logo">
+                <img src="../assets/images/MSME_images/Warehouse/dark-risk.webp" alt="Logo">
+            </div>
+            <div class="msme-text">
+                <h2>MSME</h2>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-10 info-section">
+            <div class="company-name">
+                Company Name
+            </div>
+            <div class="user-info">
+                <span>Welcome, User </br>Good Evening 08 Nov, 2024 05:25:12 pm</span>
+                <div class="db-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- new section on dashboard after header -->
+
+        <div class="dashboard-main">
+
+            <!-- progress bar section -->
+
+            <section class="process-bar-sec">
+                <!-- prgress bar -->
+                <div class="row pb-header">
+                    <div class="col-md-2">
+                        <h2 class="db-text">Endorsement Calculation</h2>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="progress_bar">
+                            <form id="progress" action="" class="progressbar">
+                                <input type="radio" id="step-1" value="steps" name="steps" class="progressbar__radio"
+                                    checked>
+                                <label for="step-1" class="progressbar__label">Step 1</label>
+                                <input type="radio" id="step-2" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-2" class="progressbar__label">Step 2</label>
+                                <input type="radio" id="step-3" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-3" class="progressbar__label">Step 3</label>
+                                <input type="radio" id="step-4" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-4" class="progressbar__label">Step 4</label>
+                                <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-5" class="progressbar__label">Step 5</label>
+                                <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-1" class="progressbar__label">Step 6</label>
+                                <input type="radio" id="step-2" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-2" class="progressbar__label">Step 7</label>
+                                <input type="radio" id="step-3" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-3" class="progressbar__label">Step 8</label>
+                                <input type="radio" id="step-4" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-4" class="progressbar__label">Step 9</label>
+                                <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-5" class="progressbar__label">Step 10</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- side navigation -->
+
+            <section>
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-lg-2 col-12">
+                        <div class="db-sidenav" id="sidenav">
+                            <button class="close-btn" id="closeBtn">&times;</button>
+                            <a href="logincredential.html">Login Credentials</a>
+                            <a href="FAR.html">FAR</a>
+                            <a href="assetsvaluation.html">Sum Insured Fixation</a>
+                            <a href="basicquote.html" style="background-color: #ffffff; color: black;">Basic Quote</a>
+                            <a href="payamentpage.html">Payment Page</a>
+                            <a href="endorsementcal.html">Endorsement Calculation</a>
+                            <a href="monthly.html">Monthly Declaration</a>
+                            <a href="claimregistration.html">Claim Registration</a>
+                            <a href="running.html">Running Claim Details</a>
+                            <a href="#">Logout</a>
+                        </div>
+                        <button class="hamburger-btn" id="hamburgerBtn">&#9776;</button>
+                    </div>
+                    <div class="col-lg-10 col-12">
+                        <div class="container">
+                            <div class="avs-page">
+                                <div class="main-container">
+                                    <div class="py-2">
+                                        <h5 class="mb-3">Final Information for Fire Insurance:-</h5>
+                                        <table class="table table-bordered ">
+                                            <thead class="fixed-row">
+                                                <tr class="table-header">
+                                                    <th class="col-md-9">Description of Risk</th>
+                                                    <th class="col-md-3">Sum Insured</th>
+                    
+                                                </tr>
+                                            </thead>
+                                            <tbody id="dataRows" class="scrollable-table">
+                                                <tr>
+                                                    <td><input type="text" class="form-control"
+                                                            placeholder="Building Including Boundary Wall of Office Block, restaurants, etc"
+                                                            disabled>
+                                                    </td>
+                                                    <td><input type="number" class="form-control" placeholder="2,10,72,00,000.00" disabled>
+                                                    </td>
+                    
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" class="form-control" placeholder="Furniture &amp; Fixture"
+                                                            disabled></td>
+                                                    <td><input type="number" class="form-control" placeholder="2,76,00,000.00" disabled>
+                                                    </td>
+                    
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" class="form-control"
+                                                            placeholder="Plant and Machinery including Lifts, DG Sets, Air &amp; Fixture"
+                                                            disabled></td>
+                                                    <td><input type="number" class="form-control" placeholder="2,76,00,000.00" disabled>
+                                                    </td>
+                    
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" class="form-control"
+                                                            placeholder="Kitchen Equipments  &amp; Fixture" disabled></td>
+                                                    <td><input type="number" class="form-control" placeholder="2,76,00,000.00" disabled>
+                                                    </td>
+                    
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" class="form-control"
+                                                            placeholder="Computer/Data Processing Equipment  &amp; Fixture" disabled></td>
+                                                    <td><input type="number" class="form-control" placeholder="2,76,00,000.00" disabled>
+                                                    </td>
+                    
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" class="form-control"
+                                                            placeholder="Health Club Equipments  &amp; Fixture" disabled></td>
+                                                    <td><input type="number" class="form-control" placeholder="2,76,00,000.00" disabled>
+                                                    </td>
+                    
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" class="form-control"
+                                                            placeholder="Audio Visual Equipments &amp; Fixture" disabled></td>
+                                                    <td><input type="number" class="form-control" placeholder="2,76,00,000.00" disabled>
+                                                    </td>
+                    
+                                                </tr>
+                    
+                    
+                                            </tbody>
+                                            <tfoot>
+                                                <tr class="footer-row">
+                                                    <td>Total Sum Insured</td>
+                                                    <td><input type="text" id="totalSumInsured" class="form-control" placeholder="0.00"
+                                                            readonly="">
+                                                    </td>
+                    
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                    
+                                    <div class="table-bordered py-4">
+                                        <form class="basic-btn">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <label for="insuredName" class="form-label">Insured Name</label>
+                                                    <input type="text" id="insuredName" class="form-control" value="John Doe" disabled>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="fireOccupancy" class="form-label">Fire Occupancy</label>
+                                                    <input type="text" id="fireOccupancy" class="form-control" value="Residential" disabled>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="terrorismCover" class="form-label">Terrorism Cover Required</label>
+                                                    <select id="terrorismCover" class="form-select">
+                                                        <option value="yes" selected>Yes</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <label for="riskLocation" class="form-label">Risk Location Address</label>
+                                                    <input type="text" id="riskLocation" class="form-control" value="123 Main St" disabled>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="communicationAddress" class="form-label">Communication Address</label>
+                                                    <input type="text" id="communicationAddress" class="form-control" value="456 Elm St"
+                                                        disabled>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="earthquakeZone" class="form-label">Earthquake Zone</label>
+                                                    <input type="text" id="earthquakeZone" class="form-control" value="Zone 3" disabled>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <label for="insuranceCompany" class="form-label">Name of the Insurance Company</label>
+                                                    <input type="text" id="insuranceCompany" class="form-control" value="ABC Insurance"
+                                                        disabled>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="policyStartDate" class="form-label">Select Policy Start Date</label>
+                                                    <input type="date" id="policyStartDate" class="form-control" value="2024-01-01"
+                                                        disabled>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="policyType" class="form-label">Policy Type</label>
+                                                    <input type="text" id="policyType" class="form-control" value="Comprehensive" disabled>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                    
+                    
+                                    <div class="bq-btn">
+                                        <div class="col-12 text-right">
+                                            <button class="btn btn-gray mr-2">Go to Dashboard</button>
+                                            <button class="btn btn-blue">Generate Quote</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rb-footer py-3">
+                                    <h3 class="text-center">
+                                        Designed & Developed by: <span style="color: #01316B;">Riskbirbal Insurance Brokers Pvt. Ltd.</span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"></script>
+
+    <script>
+        // JavaScript for toggling side navigation
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburgerBtn = document.getElementById("hamburgerBtn");
+            const sidenav = document.getElementById("sidenav");
+            const closeBtn = document.getElementById("closeBtn");
+
+            // Open the side navigation when hamburger icon is clicked
+            hamburgerBtn.addEventListener("click", function () {
+                sidenav.classList.add("open");
+            });
+
+            // Close the side navigation when close icon is clicked
+            closeBtn.addEventListener("click", function () {
+                sidenav.classList.remove("open");
+            });
+
+            // Close the side navigation if clicked outside of it (optional)
+            window.addEventListener("click", function (event) {
+                if (!sidenav.contains(event.target) && !hamburgerBtn.contains(event.target)) {
+                    sidenav.classList.remove("open");
+                }
+            });
+        });
+
+        function toggleForm(type) {
+            const formSection = document.getElementById('formSection');
+            const textareaSection = document.getElementById('textareaSection');
+
+            if (type === 'form') {
+                formSection.style.display = 'block';
+                textareaSection.style.display = 'none';
+            } else {
+                formSection.style.display = 'none';
+                textareaSection.style.display = 'block';
+            }
+        };
+    </script>
+
+
+    
+</body>
+
+</html>

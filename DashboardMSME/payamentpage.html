@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Header</title>
+
+    <link rel="stylesheet" href="../assets/css/msme_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Logo Section -->
+        <div class="col-md-2 logo-section">
+            <div class="db-logo">
+                <img src="../assets/images/MSME_images/Warehouse/dark-risk.webp" alt="Logo">
+            </div>
+            <div class="msme-text">
+                <h2>MSME</h2>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-10 info-section">
+            <div class="company-name">
+                Company Name
+            </div>
+            <div class="user-info">
+                <span>Welcome, User </br>Good Evening 08 Nov, 2024 05:25:12 pm</span>
+                <div class="db-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- new section on dashboard after header -->
+
+    <div class="dashboard-main">
+
+        <!-- progress bar section -->
+
+        <section class="process-bar-sec">
+            <!-- prgress bar -->
+            <div class="row pb-header">
+                <div class="col-md-2">
+                    <h2 class="db-text">Endorsement Calculation</h2>
+                </div>
+                <div class="col-md-10">
+                    <div class="progress_bar">
+                        <form id="progress" action="" class="progressbar">
+                            <input type="radio" id="step-1" value="steps" name="steps" class="progressbar__radio"
+                                checked>
+                            <label for="step-1" class="progressbar__label">Step 1</label>
+                            <input type="radio" id="step-2" value="steps" name="steps" class="progressbar__radio">
+                            <label for="step-2" class="progressbar__label">Step 2</label>
+                            <input type="radio" id="step-3" value="steps" name="steps" class="progressbar__radio">
+                            <label for="step-3" class="progressbar__label">Step 3</label>
+                            <input type="radio" id="step-4" value="steps" name="steps" class="progressbar__radio">
+                            <label for="step-4" class="progressbar__label">Step 4</label>
+                            <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+                            <label for="step-5" class="progressbar__label">Step 5</label>
+                            <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+                            <label for="step-1" class="progressbar__label">Step 6</label>
+                            <input type="radio" id="step-2" value="steps" name="steps" class="progressbar__radio">
+                            <label for="step-2" class="progressbar__label">Step 7</label>
+                            <input type="radio" id="step-3" value="steps" name="steps" class="progressbar__radio">
+                            <label for="step-3" class="progressbar__label">Step 8</label>
+                            <input type="radio" id="step-4" value="steps" name="steps" class="progressbar__radio">
+                            <label for="step-4" class="progressbar__label">Step 9</label>
+                            <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+                            <label for="step-5" class="progressbar__label">Step 10</label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- side navigation -->
+
+        <section>
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-lg-2 col-12">
+                    <div class="db-sidenav" id="sidenav">
+                        <button class="close-btn" id="closeBtn">&times;</button>
+                        <a href="logincredential.html">Login Credentials</a>
+                        <a href="FAR.html">FAR</a>
+                        <a href="assetsvaluation.html">Sum Insured Fixation</a>
+                        <a href="basicquote.html">Basic Quote</a>
+                        <a href="payamentpage.html"style="background-color: #ffffff; color: black;">Payment Page</a>
+                        <a href="endorsementcal.html">Endorsement Calculation</a>
+                        <a href="monthly.html">Monthly Declaration</a>
+                        <a href="claimregistration.html">Claim Registration</a>
+                        <a href="running.html">Running Claim Details</a>
+                        <a href="#">Logout</a>
+                        
+                    </div>
+                    <button class="hamburger-btn" id="hamburgerBtn">&#9776;</button>
+                </div>
+                <div class="col-lg-10 col-12">
+                    <div class="container py-2">
+                        <!-- <h2 class="text-center mb-5">KYC & Payment Page</h2> -->
+                        <div class="kyc_payment">
+                            <div class="row">
+                                <!-- Upload PAN Card Section -->
+                                <div class="col-md-6 py-3">
+                                    <div class="card p-4 shadow-sm">
+                                        <h4 class="mb-3">Upload PAN Card</h4>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <span>Select a file</span>
+                                                <label for="pan-file" class="btn btn-primary btn-block">
+                                                    <i class="fas fa-file-upload"></i> Choose
+                                                </label>
+                                                <input type="file" id="pan-file" class="d-none" accept="image/*">
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <input type="checkbox" id="vehicle1" value="">
+                                                <label for="pan-radio" class="ml-2">Confirm Selection</label>
+                                                <div id="pan-preview" class="mt-3"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Upload GST Certificate Section -->
+                                <div class="col-md-6">
+                                    <div class="card p-4 shadow-sm">
+                                        <h4 class="mb-3">Upload GST Certificate</h4>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <span>Select a file</span>
+                                                <label for="gst-file" class="btn btn-primary btn-block">
+                                                    <i class="fas fa-file-upload"></i> Choose
+                                                </label>
+                                                <input type="file" id="gst-file" class="d-none" accept="image/*">
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <input type="checkbox" id="vehicle1" value="">
+                                                <label for="pan-radio" class="ml-2">Confirm Selection</label>
+                                                <div id="gst-preview" class="mt-3"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-right mt-4">
+                                <button class="btn" id="upload-btn">Upload</button>
+                            </div>
+                            <div class="col-12 text-right back-go-btns">
+                                <button class="btn btn-primary mr-2">Back</button>
+                                <button class="btn btn-secondary">Proceed for KYC</button>
+                            </div>
+                        </div>
+
+
+                        <!-- payment process section -->
+
+
+                        <div class="payment-process">
+
+                            <!-- Form Section -->
+
+                            <div class="px-5 py-4">
+                                <div class="btn-group btn-group-toggle rounded mb-4" style="gap: 12px;"
+                                    data-bs-toggle="buttons">
+                                    <button class="btn btn-outline-primary active" data-bs-toggle
+                                        onclick="showSection('neft')">NEFT</button>
+                                    <button class="btn btn-outline-primary" data-bs-toggle
+                                        onclick="showSection('cheque')">CHEQUE</button>
+                                    <button class="btn btn-outline-primary" data-bs-toggle
+                                        onclick="showSection('payment-link')">PAYMENT_LINK</button>
+                                </div>
+
+                                <!-- NEFT Section -->
+                                <div id="neft-section" class="form-section active">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="row py-2">
+                                                <div class="form-group col-md-6">
+                                                    <label>Enter UTR/Transaction No.</label>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Enter UTR/Transaction No.">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label>Date of Fund Transfer</label>
+                                                    <input type="date" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row py-2">
+                                                <div class="form-group col-md-6">
+                                                    <label>Fund Transfer Amount</label>
+                                                    <input type="number" class="form-control"
+                                                        placeholder="Enter Amount">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label>Select A/c No to which payment is made</label>
+                                                    <select class="form-control">
+                                                        <option value="">Select Account</option>
+                                                        <option value="1">Account 1</option>
+                                                        <option value="2">Account 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="agreeCheckbox">
+                                                <label class="form-check-label" for="agreeCheckbox">I Agree</label>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="npd-box">
+                                                <p class="npd-text">NEFT Payment Details of ICICI Lombard GIC Ltd. :-
+                                                </p>
+                                                <div class="npd-bank">
+                                                    <div class="row mb-4 px-4 align-items-center user-pass">
+                                                        <div class="col-md-6 col-sm-6 col-6">
+                                                            <p>Bank Name:</p>
+                                                            <span>ICICI Bank</span>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6 col-6">
+                                                            <p>Branch Name:</p>
+                                                            <span>Delhi</span>
+                                                        </div>
+
+                                                        <div class="col-md-6 col-sm-6 col-6 py-3">
+                                                            <p>IFSC Code:</p>
+                                                            <span>ICICI04646</span>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6 col-6">
+                                                            <p>Branch Code:</p>
+                                                            <span>04646</span>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <img src="../assets/images/MSME_images/Warehouse/image 19.png"
+                                                                alt="Payment Details">
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- CHEQUE Section -->
+                                <div id="cheque-section" class="form-section">
+                                    <div class="row">
+                                        <div class="col-md-8 col-lg-8">
+                                            <div>
+                                                <div class="row py-2">
+                                                    <div class="form-group col-md-6">
+                                                        <label>Enter Instrument No.</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Cheque Number">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label>Cheque Date.</label>
+                                                        <input type="date" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2">
+                                                    <div class="form-group col-md-6">
+                                                        <label>MICR No.</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Bank Name">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label>Amount</label>
+                                                        <input type="number" class="form-control"
+                                                            placeholder="Enter Amount">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Upload Cheque Image</label>
+                                                    <input type="file" class="form-control-file">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="npd-box">
+                                                <p class="npd-text">By Cheque Payment Details of ICICI Lombard GIC Ltd.
+                                                </p>
+                                                <div class="npd-bank">
+                                                    <div class="row mb-4 px-4 align-items-center user-pass">
+                                                        <div class="col-md-12 col-sm-12 col-12">
+                                                            <p>In Favor of:</p>
+                                                            <span>ICICI Lombard GIC LTD.</span>
+                                                        </div>
+                                                        <div class="col-md-12 col-sm-12 col-12 py-2">
+                                                            <p>Branch Name:</p>
+                                                            <span>Delhi</span>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <img src="../assets/images/MSME_images/Warehouse/image 19.png"
+                                                                alt="Payment Details">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- PAYMENT LINK Section -->
+                                <div id="payment-link-section" class="form-section">
+                                    <div class="row">
+                                        <div class="col-md-8 col-lg-8">
+                                            <div>
+                                                <div class="payment_text">
+                                                    <p>Enter the details of Payment Details :-</p>
+                                                </div>
+                                                <div class="row py-2">
+                                                    <div class="form-group col-md-6">
+                                                        <label>Mobile No.</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Mobile No.">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label>Email ID</label>
+                                                        <input type="email" class="form-control"
+                                                            placeholder="Enter Email ID">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-4">
+                                            <div class="payment-link-img">
+                                                <img src="../assets/images/MSME_images/Warehouse/Fingerprint_login.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-right py-4 ncp-btn">
+                            <button class="btn btn-primary mr-2">Back</button>
+                            <button class="btn btn-secondary">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"></script>
+
+    <script>
+        // JavaScript for toggling side navigation
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburgerBtn = document.getElementById("hamburgerBtn");
+            const sidenav = document.getElementById("sidenav");
+            const closeBtn = document.getElementById("closeBtn");
+
+            // Open the side navigation when hamburger icon is clicked
+            hamburgerBtn.addEventListener("click", function () {
+                sidenav.classList.add("open");
+            });
+
+            // Close the side navigation when close icon is clicked
+            closeBtn.addEventListener("click", function () {
+                sidenav.classList.remove("open");
+            });
+
+            // Close the side navigation if clicked outside of it (optional)
+            window.addEventListener("click", function (event) {
+                if (!sidenav.contains(event.target) && !hamburgerBtn.contains(event.target)) {
+                    sidenav.classList.remove("open");
+                }
+            });
+        });
+
+        function toggleForm(type) {
+            const formSection = document.getElementById('formSection');
+            const textareaSection = document.getElementById('textareaSection');
+
+            if (type === 'form') {
+                formSection.style.display = 'block';
+                textareaSection.style.display = 'none';
+            } else {
+                formSection.style.display = 'none';
+                textareaSection.style.display = 'block';
+            }
+        };
+    </script>
+
+
+
+    <script>
+        function showSection(section) {
+            document.querySelectorAll('.form-section').forEach(el => el.classList.remove('active'));
+            document.getElementById(`${section}-section`).classList.add('active');
+        }
+    </script>
+    <script>
+        // PAN Card File Preview
+        document.getElementById('pan-file').addEventListener('change', function (event) {
+            previewImage(event, 'pan-preview');
+        });
+
+        // GST Certificate File Preview
+        document.getElementById('gst-file').addEventListener('change', function (event) {
+            previewImage(event, 'gst-preview');
+        });
+
+        // Function to Preview Image
+        function previewImage(event, previewElementId) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById(previewElementId).innerHTML = '<img src="' + e.target.result + '" class="img-thumbnail">';
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        document.getElementById('upload-btn').addEventListener('click', function () {
+            alert('Files Uploaded Successfully!');
+        });
+
+    </script>
+
+
+</body>
+
+</html>

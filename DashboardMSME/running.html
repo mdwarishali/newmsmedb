@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Header</title>
+
+    <link rel="stylesheet" href="../assets/css/msme_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Logo Section -->
+        <div class="col-md-2 logo-section">
+            <div class="db-logo">
+                <img src="../assets/images/MSME_images/Warehouse/dark-risk.webp" alt="Logo">
+            </div>
+            <div class="msme-text">
+                <h2>MSME</h2>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-10 info-section">
+            <div class="company-name">
+                Company Name
+            </div>
+            <div class="user-info">
+                <span>Welcome, User </br>Good Evening 08 Nov, 2024 05:25:12 pm</span>
+                <div class="db-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- new section on dashboard after header -->
+
+
+        <div class="dashboard-main">
+
+            <!-- progress bar section -->
+
+            <section class="process-bar-sec">
+                <!-- prgress bar -->
+                <div class="row pb-header">
+                    <div class="col-md-2">
+                        <h2 class="db-text">Running Claim Details</h2>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="progress_bar">
+                            <form id="progress" action="" class="progressbar">
+                                <input type="radio" id="step-1" value="steps" name="steps" class="progressbar__radio"
+                                    checked>
+                                <label for="step-1" class="progressbar__label">Step 1</label>
+                                <input type="radio" id="step-2" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-2" class="progressbar__label">Step 2</label>
+                                <input type="radio" id="step-3" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-3" class="progressbar__label">Step 3</label>
+                                <input type="radio" id="step-4" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-4" class="progressbar__label">Step 4</label>
+                                <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-5" class="progressbar__label">Step 5</label>
+                                <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-1" class="progressbar__label">Step 6</label>
+                                <input type="radio" id="step-2" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-2" class="progressbar__label">Step 7</label>
+                                <input type="radio" id="step-3" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-3" class="progressbar__label">Step 8</label>
+                                <input type="radio" id="step-4" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-4" class="progressbar__label">Step 9</label>
+                                <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-5" class="progressbar__label">Step 10</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- side navigation -->
+
+            <section>
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-lg-2 col-12">
+                        <div class="db-sidenav" id="sidenav">
+                            <button class="close-btn" id="closeBtn">&times;</button>
+
+                            <a href="logincredential.html">Login Credentials</a>
+                        <a href="FAR.html">FAR</a>
+                        <a href="assetsvaluation.html">Sum Insured Fixation</a>
+                        <a href="basicquote.html">Basic Quote</a>
+                        <a href="payamentpage.html">Payment Page</a>
+                        <a href="endorsementcal.html">Endorsement Calculation</a>
+                        <a href="monthly.html">Monthly Declaration</a>
+                        <a href="claimregistration.html">Claim Registration</a>
+                        <a href="running.html" style="background-color: #ffffff; color: black;">Running Claim Details</a>
+                        <a href="#">Logout</a>
+                        </div>
+                        <button class="hamburger-btn" id="hamburgerBtn">&#9776;</button>
+                    </div>
+                    <div class="col-lg-10 col-12">
+                        <div class="main-running">
+                            <div class="running-fs">
+                                <div class="row">
+                                    <!-- Left Side (5 Purple Boxes) -->
+                                    <div class="col-md-7">
+                                        <div class="row py-4">
+                                            <div class="col-md-2">
+                                                <div class="card-item">
+                                                    <div>
+                                                        <p>Date of loss</p>
+                                                    </div>
+                                                    <div><span><strong>13.12.2024</strong></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="card-item">
+                                                    <div>
+                                                        <p>Type of loss</p>
+                                                    </div>
+                                                    <div><span><strong>FIre Loss</strong></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="card-item">
+                                                    <div>
+                                                        <p>Loss Location</p>
+                                                    </div>
+                                                    <div><span><strong>Delhi</strong></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card-item">
+                                                    <div>
+                                                        <p>Probable cause of loss</p>
+                                                    </div>
+                                                    <div><span><strong>Water logging</strong></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card-item">
+                                                    <div>
+                                                        <p>Approx. loss amount</p>
+                                                    </div>
+                                                    <div><span><strong>12,60,000</strong></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <!-- Right Side (Surveyor Cards) -->
+                                    <div class="col-md-5 rls-section">
+                                        <h5 class="text-center">Surveyor Details</h5>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="survey-card">
+                                                    <i class="fa-solid fa-user"></i>
+                                                    <div>
+                                                        <p>Surveryor Name</p>
+                                                    </div>
+                                                    <div><span><strong>Devraj Rathore</strong></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="survey-card">
+                                                    <i class="fa-solid fa-phone"></i>
+                                                    <div>
+                                                        <p>Surveryor Contact</p>
+                                                    </div>
+                                                    <div><span><strong>+91-8800099000</strong></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="survey-card">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <div>
+                                                        <p>Date of Survey</p>
+                                                    </div>
+                                                    <div><span><strong>13.12.2024</strong></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="lor-section">
+                                <h5>LOR - List of Requirements</h5>
+                                <hr>
+                                <div class="lor-row">
+                                    <span>1. Document Name</span>
+                                    <select class="form-select" style="width: 200px;">
+                                        <option selected>Choose Field</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                    </select>
+                                    <input type="file" class="form-control" style="width: 250px;">
+                                    <div class="r-icon">
+                                        <i class="bi bi-trash" style="font-size: 1.5rem; cursor: pointer; color: #734B8E;"></i>
+                                        <i class="bi bi-card-image" style="font-size: 1.5rem; cursor: pointer; color: #734B8E;"></i>
+                                    </div>
+                                </div>
+                
+                                <div class="lor-row">
+                                    <span>2. Document Name</span>
+                                    <select class="form-select" style="width: 200px;">
+                                        <option selected>Choose Field</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                    </select>
+                                    <input type="file" class="form-control" style="width: 250px;">
+                                    <div class="r-icon">
+                                        <i class="bi bi-trash" style="font-size: 1.5rem; cursor: pointer; color: #734B8E;"></i>
+                                        <i class="bi bi-card-image" style="font-size: 1.5rem; cursor: pointer; color: #734B8E;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- next section Claim Assessment -->
+                
+                
+                            <div class="claim-section">
+                                <h5 class="text-white">Claim Assessment</h5>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md my-2">
+                                        <p class="text-white consent">Consent overview</p>
+                                        <p class="text-white px-4 py-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+                                            laborum nesciunt eligendi
+                                            dolores facilis necessitatibus inventore! Non possimus ad modi deleniti quam ipsum
+                                            voluptates minus?</p>
+                                        <div class="row">
+                                            <div class="col-md-6 py-2">
+                                                <label class="satisfy" for="satisfy">Satisfy with the shared assessment</label>
+                                                <input type="radio" id="satisfy" name="assessment" checked onclick="toggleForm('form')">
+                                            </div>
+                                            <div class="col-md-6 py-2">
+                                                <label class="satisfy" for="notSatisfy">Not Satisfy with the shared assessment</label>
+                                                <input type="radio" id="notSatisfy" name="assessment" onclick="toggleForm('textarea')">
+                                            </div>
+                                        </div>
+                
+                
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div id="formSection">
+                                            <div class="form-text">
+                                                <p class="text">
+                                                    Enter A/c details to receive the Assessment Amount.
+                                                </p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="accountNo" class="form-label">Account No.</label>
+                                                        <input type="text" id="accountNo" class="form-control"
+                                                            placeholder="Enter Account No">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="accountNo" class="form-label">Bank Name</label>
+                                                        <input type="text" id="accountNo" class="form-control"
+                                                            placeholder="Enter Bank Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="ifscCode" class="form-label">IFSC Code</label>
+                                                        <input type="text" id="ifscCode" class="form-control"
+                                                            placeholder="Enter IFSC Code">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="branchCode" class="form-label">Branch Code</label>
+                                                        <input type="text" id="branchCode" class="form-control"
+                                                            placeholder="Enter Branch Code">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="textareaSection" style="display: none;">
+                                            <div class="form-text">
+                                                <p class="text">
+                                                    Share your concern to revise the Assessment. 
+                                                </p>
+                                            </div>
+                                            <textarea class="form-control" rows="4" placeholder="Provide your feedback..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="col-12 text-right py-4">
+                                    <button class="btn btn-secondary mr-2 btn-pre">Back</button>
+                                    <button class="btn btn-secondary btn-next">Next</button>
+                                </div>
+                
+                
+                
+                            </div>
+                        </div>
+                
+                        <!-- Bootstrap JS & Icons -->
+                        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+                        <!-- Bootstrap Icons -->
+                        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+                
+                        <script>
+                            function toggleForm(type) {
+                                const formSection = document.getElementById('formSection');
+                                const textareaSection = document.getElementById('textareaSection');
+                
+                                if (type === 'form') {
+                                    formSection.style.display = 'block';
+                                    textareaSection.style.display = 'none';
+                                } else {
+                                    formSection.style.display = 'none';
+                                    textareaSection.style.display = 'block';
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+  
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"></script>
+
+    <script>
+        // JavaScript for toggling side navigation
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburgerBtn = document.getElementById("hamburgerBtn");
+            const sidenav = document.getElementById("sidenav");
+            const closeBtn = document.getElementById("closeBtn");
+
+            // Open the side navigation when hamburger icon is clicked
+            hamburgerBtn.addEventListener("click", function () {
+                sidenav.classList.add("open");
+            });
+
+            // Close the side navigation when close icon is clicked
+            closeBtn.addEventListener("click", function () {
+                sidenav.classList.remove("open");
+            });
+
+            // Close the side navigation if clicked outside of it (optional)
+            window.addEventListener("click", function (event) {
+                if (!sidenav.contains(event.target) && !hamburgerBtn.contains(event.target)) {
+                    sidenav.classList.remove("open");
+                }
+            });
+        });
+
+        function toggleForm(type) {
+            const formSection = document.getElementById('formSection');
+            const textareaSection = document.getElementById('textareaSection');
+
+            if (type === 'form') {
+                formSection.style.display = 'block';
+                textareaSection.style.display = 'none';
+            } else {
+                formSection.style.display = 'none';
+                textareaSection.style.display = 'block';
+            }
+        };
+    </script>
+
+
+    <script>
+        function toggleForm(type) {
+            const formSection = document.getElementById('formSection');
+            const textareaSection = document.getElementById('textareaSection');
+
+            if (type === 'form') {
+                formSection.style.display = 'block';
+                textareaSection.style.display = 'none';
+            } else {
+                formSection.style.display = 'none';
+                textareaSection.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>

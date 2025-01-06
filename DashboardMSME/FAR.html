@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Header</title>
+
+    <link rel="stylesheet" href="../assets/css/msme_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Logo Section -->
+        <div class="col-md-2 logo-section">
+            <div class="db-logo">
+                <img src="../assets/images/MSME_images/Warehouse/dark-risk.webp" alt="Logo">
+            </div>
+            <div class="msme-text">
+                <h2>MSME</h2>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-10 info-section">
+            <div class="company-name">
+                Company Name
+            </div>
+            <div class="user-info">
+                <span>Welcome, User </br>Good Evening 08 Nov, 2024 05:25:12 pm</span>
+                <div class="db-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- new section on dashboard after header -->
+
+        <div class="dashboard-main">
+
+            <!-- progress bar section -->
+
+            <section class="process-bar-sec">
+                <!-- prgress bar -->
+                <div class="row pb-header">
+                    <div class="col-md-2">
+                        <h2 class="db-text">Endorsement Calculation</h2>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="progress_bar">
+                            <form id="progress" action="" class="progressbar">
+                                <input type="radio" id="step-1" value="steps" name="steps" class="progressbar__radio"
+                                    checked>
+                                <label for="step-1" class="progressbar__label">Step 1</label>
+                                <input type="radio" id="step-2" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-2" class="progressbar__label">Step 2</label>
+                                <input type="radio" id="step-3" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-3" class="progressbar__label">Step 3</label>
+                                <input type="radio" id="step-4" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-4" class="progressbar__label">Step 4</label>
+                                <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-5" class="progressbar__label">Step 5</label>
+                                <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-1" class="progressbar__label">Step 6</label>
+                                <input type="radio" id="step-2" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-2" class="progressbar__label">Step 7</label>
+                                <input type="radio" id="step-3" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-3" class="progressbar__label">Step 8</label>
+                                <input type="radio" id="step-4" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-4" class="progressbar__label">Step 9</label>
+                                <input type="radio" id="step-5" value="steps" name="steps" class="progressbar__radio">
+                                <label for="step-5" class="progressbar__label">Step 10</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- side navigation -->
+
+            <section>
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-lg-2 col-12">
+                        <div class="db-sidenav" id="sidenav">
+                            <button class="close-btn" id="closeBtn">&times;</button>
+                            <a href="logincredential.html">Login Credentials</a>
+                        <a href="FAR.html" style="background-color: #ffffff; color: black;">FAR</a>
+                        <a href="assetsvaluation.html">Sum Insured Fixation</a>
+                        <a href="basicquote.html">Basic Quote</a>
+                        <a href="payamentpage.html">Payment Page</a>
+                        <a href="endorsementcal.html">Endorsement Calculation</a>
+                        <a href="monthly.html">Monthly Declaration</a>
+                        <a href="claimregistration.html">Claim Registration</a>
+                        <a href="running.html">Running Claim Details</a>
+                        <a href="#">Logout</a>
+                        </div>
+                        <button class="hamburger-btn" id="hamburgerBtn">&#9776;</button>
+                    </div>
+                    <div class="col-lg-10 col-12">
+                        <div class="container-fluid si-page">
+                            <div class="row">
+                                <!-- Left Section -->
+                                <div class="col-md-6 left-section">
+                    
+                                    <div class="far-text text-center py-4">
+                                        <h2 class="fw-bold">Fixed Asset Register (FAR)</h2>
+                                        <p>Fixed Asset Register (FAR) is invaluable. It provides a detailed record of all the fixed assets
+                                            owned by a company.
+                                            including
+                                            their original purchase prices, dates of acquisition, locations, and current status. This
+                                            information is essential for:</p>
+                                    </div>
+                    
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                    
+                                            <div class="info-card">
+                                                <h5>Accurate Valuation:</h5>
+                                                <p>
+                                                    Ensuring that assets are correctly valued, which is critical for determining the amount
+                                                    of coverage needed and the appropriate settlement in the event of a claim.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                    
+                                            <div class="info-card">
+                                                <h5>Proof of Ownership:</h5>
+                                                <p>
+                                                    Establishing ownership and the existence of assets, which is crucial for
+                                                    substantiating claims and avoiding disputes with insurers.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="info-card">
+                                                <h5>Damage Assessment:</h5>
+                    
+                                                <p>Facilitating the assessment of damage or loss, as the FAR helps insurers and adjusters
+                                                    quickly identify the assets
+                                                    involved and their pre-incident condition.</p>
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                    
+                                    <div class="far-text text-center py-4">
+                                        <h2 class="fw-bold">The Reinstatement Value (RIV)</h2>
+                                        <p>The Reinstatement Value (RIV) is crucial in insurance claims as it determines the cost to replace
+                                            or repair an asset to its original condition at
+                                            current prices. Its importance lies in:</p>
+                    
+                                    </div>
+                    
+                                    <div class="row">
+                                        <div class="col-md-12">
+                    
+                                            <div id="info-card-sec" class="info-card">
+                                                <h5>Full Coverage:</h5>
+                                                <p>
+                                                    Ensuring the insurance payout covers the actual cost of reinstating the asset, not just
+                                                    its depreciated value.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                    
+                                            <!-- <div class="info-card">
+                                                <h5>Proof of Ownership:</h5>
+                                                <p>
+                                                    Establishing ownership and the existence of assets, which is crucial for
+                                                    substantiating claims and avoiding disputes with insurers.
+                                                </p>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                    
+                    
+                    
+                                    <div class="far-text text-center py-4">
+                                        <h2 class="fw-bold">Asset Valuation:</h2>
+                                        <p> Asset Valuation: Asset Valuation is the process of determining the reinstatement value
+                                            of an asset.</p>
+                                    </div>
+                    
+                                    <div class="row">
+                                        <div class="col-md-3">
+                    
+                                            <div id="info-card-third" class="info-card">
+                                                <h5>Accurate Coverage</h5>
+                    
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div id="info-card-third" class="info-card">
+                                                <h5>Fair Settlements</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div id="info-card-third" class="info-card">
+                                                <h5>Risk Assessment</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div id="info-card-third" class="info-card">
+                                                <h5>Financial Planning</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- Right Section -->
+                    
+                                <div class="col-md-6 right-section">
+                                    <div class="container">
+                                        <h2>Is FAR (Fixed Asset Register) Available?</h2>
+                                        <div class="text-center">
+                                            <button class="btn btn-outline-primary btn-custom" id="yes1">Yes1</button>
+                                            <button class="btn btn-outline-danger btn-custom" id="no1">No1</button>
+                                        </div>
+                    
+                                        <div id="answer1" style="display: none;">
+                                            <p><strong>Is the available SI on RIV (Reinstatement Value)?</strong></p>
+                                            <div class="text-center">
+                                                <button class="btn btn-outline-primary btn-custom" id="yes2">Yes2</button>
+                                                <button class="btn btn-outline-danger btn-custom" id="no2">No2</button>
+                                            </div>
+                                        </div>
+                    
+                                        <div id="answer2" style="display: none;">
+                                            <p><strong>Enter the sum insured with headwise bifurcation</strong></p>
+                                            <!-- <input type="number" class="form-control mb-3" placeholder="Enter SI Value"> -->
+                                            <button class="btn btn-primary">Enter SI Value</button>
+                                        </div>
+                    
+                                        <div id="answer3" style="display: none;">
+                                            <p><strong>Is the available SI on RIV (Reinstatement Value)?</strong></p>
+                                            <div class="text-center">
+                                                <button class="btn btn-outline-primary btn-custom" id="yes3">Yes3</button>
+                                                <button class="btn btn-outline-danger btn-custom" id="no3">No3</button>
+                                            </div>
+                                        </div>
+                    
+                                        <div id="answer4" style="display: none;">
+                                            <p><strong>Enter the sum insured with headwise bifurcation</strong></p>
+                                            <!-- <input type="number" class="form-control mb-3" placeholder="Enter SI Value"> -->
+                                            <button class="btn btn-primary">Enter SI Value</button>
+                                        </div>
+                    
+                                        <div class="popup" id="popupNote1">
+                                            <h5>Note:</h5>
+                                            <p>Please proceed with Asset Valuation Process to know the RIV of your assets</p>
+                                            <button class="popup-btn" id="proceedToAssets">Enter SI Value</button>
+                                        </div>
+                    
+                                        <div class="popup" id="popupNote2">
+                                            <h5>Note:</h5>
+                                            <p>The RIV is the Reinstatement value that must be provided for proper coverage. This policy
+                                                provides
+                                                underinsurance coverage to keep your assets covered up to 25% underinsured value.</p>
+                                            <button class="popup-btn" id="closePopup2">Enter SI Value</button>
+                                        </div>
+                    
+                                        <div class="overlay" id="overlay"></div>
+                                    </div>
+                    
+                                    <div class="logo-img">
+                                        <img src="fixed assets.png" alt=" assets valuatin products">
+                                    </div>
+                    
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"></script>
+
+
+    <script>
+        // JavaScript for toggling side navigation
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburgerBtn = document.getElementById("hamburgerBtn");
+            const sidenav = document.getElementById("sidenav");
+            const closeBtn = document.getElementById("closeBtn");
+
+            // Open the side navigation when hamburger icon is clicked
+            hamburgerBtn.addEventListener("click", function () {
+                sidenav.classList.add("open");
+            });
+
+            // Close the side navigation when close icon is clicked
+            closeBtn.addEventListener("click", function () {
+                sidenav.classList.remove("open");
+            });
+
+            // Close the side navigation if clicked outside of it (optional)
+            window.addEventListener("click", function (event) {
+                if (!sidenav.contains(event.target) && !hamburgerBtn.contains(event.target)) {
+                    sidenav.classList.remove("open");
+                }
+            });
+        });
+
+        function toggleForm(type) {
+            const formSection = document.getElementById('formSection');
+            const textareaSection = document.getElementById('textareaSection');
+
+            if (type === 'form') {
+                formSection.style.display = 'block';
+                textareaSection.style.display = 'none';
+            } else {
+                formSection.style.display = 'none';
+                textareaSection.style.display = 'block';
+            }
+        };
+    </script>
+
+
+    <script>
+        // Show/Hide sections based on button clicks
+        document.getElementById('yes1').addEventListener('click', function () {
+            activateButton(this);
+            document.getElementById('answer1').style.display = 'block';
+        });
+
+        document.getElementById('no1').addEventListener('click', function () {
+            activateButton(this);
+            document.getElementById('answer3').style.display = 'block';
+        });
+
+        document.getElementById('yes2').addEventListener('click', function () {
+            activateButton(this);
+            document.getElementById('answer2').style.display = 'block';
+        });
+
+        document.getElementById('no2').addEventListener('click', function () {
+            activateButton(this);
+            showPopup('popupNote1');
+        });
+
+        document.getElementById('yes3').addEventListener('click', function () {
+            activateButton(this);
+            document.getElementById('answer4').style.display = 'block';
+        });
+
+        document.getElementById('no3').addEventListener('click', function () {
+            activateButton(this);
+            showPopup('popupNote2');
+        });
+
+        // Popup actions
+        document.getElementById('proceedToAssets').addEventListener('click', function () {
+            closePopup('popupNote1');
+        });
+
+        document.getElementById('closePopup2').addEventListener('click', function () {
+            closePopup('popupNote2');
+        });
+
+        function activateButton(button) {
+            document.querySelectorAll('.btn-custom').forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+        }
+
+        function showPopup(popupId) {
+            document.getElementById('overlay').classList.add('active');
+            document.getElementById(popupId).classList.add('active');
+        }
+
+        function closePopup(popupId) {
+            document.getElementById('overlay').classList.remove('active');
+            document.getElementById(popupId).classList.remove('active');
+        }
+    </script>
+</body>
+
+</html>
